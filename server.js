@@ -11,6 +11,7 @@ const PORT = process.env.port || 3000;
 //Body Parser
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use('/css', express.static(path.join(_dirname, 'app/public/css')));
 
 
 require('./app/routing/apiRoutes.js');

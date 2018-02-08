@@ -12,8 +12,8 @@ module.exports = function(app) {
         .map(friendData => {
             return {
                 name: friendData.name,
-                picture: friendData.image,
-                score: friendData.answer
+                picture: friendData.photo,
+                score: friendData.scores
                   .map((a,i) => Math.abs(a - friendNew.answer[i]))
                   .filter(a => a)
                   .reduce((s, x) => s + x, 0)
