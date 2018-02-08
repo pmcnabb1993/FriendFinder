@@ -17,15 +17,72 @@
   <title>Friend Finder</title>
 </head>
 
-<body>
-    <div>
-        <h1>Survey Time!</h1>
-    </div>
+<body data-gr-c-s-loaded="true">
+        <nav class="light-blue lighten-1" role="navigation">
+          <div class="nav-wrapper container"><a id="logo-container" href="./home.html" class="brand-logo">FriendFinder<i class="medium material-icons">group</i></a>
+            <ul class="right">
+              <li><a href="./home.html">Home Page <i class="material-icons">account_circle</i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Survey Time!</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">We match friends based these 10 questions. Please answer each question with how strongly you agree (5) or how strongly you disagree (1).</h5>
+            </div>
+        <!--Start Survey-->
+            <div class="row center">
+            <div class="col s12">
+                <h2>Survey Questions</h2>
+                <hr>
+                        
+                <h3><strong>About You</strong></h3>
+                <h4>Name (Required)</h4>
+                <input type="text" name="" id="name" class="form-control" required="">
+                        
+                <h4>Link to Photo Image (Required)</h4>
+                <input type="text" name="" id="photo" class="form-control" required="">
+                        
+                <hr>
+                        
+                <h3><strong>Question 1</strong></h3>
+                <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q1" style="display: none;">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                    </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q1_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        
+                                
+      <!--End Survey-->
+            </div>
+            </div>
 
-
-
+        </div>
+      </div>
+        
+      
+      <div class="container">
+          <div class="section">
+      
+        <footer class="page-footer orange">
+          <div class="footer-copyright">
+            <div class="container">
+            Made by <a class="orange-text text-lighten-2" href="http://materializecss.com">Materialize</a><a class="right white-text">© 2018 FriendFinder</a>
+            </div>
+          </div>
+        </footer>
+        
+      <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="nav-mobile" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+    
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./js/materialize.min.js"></script>
-</body>
-</html>
+    
+    </body>
+    </html>
