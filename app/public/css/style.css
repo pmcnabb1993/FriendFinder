@@ -21,3 +21,11 @@
   width: 100%;
   margin: 0 auto;
 }
+.img {
+     height: 350px;
+    margin: 0 auto;
+    display: block;
+}
+label {
+    font-size: .12rem;
+}

@@ -35,7 +35,7 @@ questions.map(question => {
     <div class="center">
       <h3 class="center">${question}</h3>
         <div class="option">
-          <select name="answer" required>
+          <select class="form-control" id="q1">
             <option disabled selected value> -- Select an Option -- </option>
             <option value="0">Strongly Disagree</option>
             <option value="1">Disagree</option>
@@ -51,14 +51,14 @@ questions.map(question => {
 $('.quiz').prepend(`
   <div class="center">
     <label>Name:</label> <input type="text" name="name" required/><br />
-    <label>Photo:</label> <input type="text" name="img" required/>
+    <label>Photo:</label> <input type="text" name="photo" required/>
   </div>
 `);
 
 $('.quiz').on('submit', function(e) {
   e.preventDefault();
   const friendData = $(this).serializeArray();
-  $.post('/api/friendData', friendData).done(res => showMatch(res));
+  $.post('/api/friends.js', friendsArray).done(res => showMatch(res));
 });
 $(window).click(function(e) {
   const modal = document.getElementById('match-modal');
