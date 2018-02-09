@@ -4,8 +4,8 @@ var friendData = require("../data/friends");
 
 //GET Routing
 module.exports = function(app) {
-    app.get('/api/friends', (req, res) => res.json(friendData)); 
-    app.post('/api/friends', (req, res) => {
+    app.get('/api/friends.js', (req, res) => res.json(friendData)); 
+    app.post('/api/friends.js', (req, res) => {
         var friendNew = req.body;
         var friendMatch = friendData
 
