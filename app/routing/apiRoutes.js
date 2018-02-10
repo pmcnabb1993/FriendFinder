@@ -1,4 +1,4 @@
-//Load Data
+
 
 var friends = require("../data/friends.js");
 
@@ -8,7 +8,7 @@ module.exports = function(app) {
         var friendAPI = req.friends;
         res.json(friends);
     }); 
-    app.post('/api/friendData', function(req, res) {
+    app.post('/api/friends', function(req, res) {
         var friendNew = req.body;
         friends.push(friendNew);
         res.json(friendNew);

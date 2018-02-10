@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(express.static("app/public"));
 
 app.use('/img', express.static(path.join(__dirname, 'app/public/img')));
 app.use('/js', express.static(path.join(__dirname, 'app/public/js')));
