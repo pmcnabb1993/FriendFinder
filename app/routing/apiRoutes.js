@@ -1,16 +1,16 @@
 //Load Data
 
-var friendData = require("../data/friends.js");
+var friends = require("../data/friends.js");
 
 //GET Routing
 module.exports = function(app) {
-    app.get('/api/friendData', function(req, res) {
-        var friendsAPI = req.friends;
-        res.json(friendData);
+    app.get('/api/friends', function(req, res) {
+        var friendAPI = req.friends;
+        res.json(friends);
     }); 
     app.post('/api/friendData', function(req, res) {
         var friendNew = req.body;
-        friendData.push(friendNew);
+        friends.push(friendNew);
         res.json(friendNew);
       });
     };
