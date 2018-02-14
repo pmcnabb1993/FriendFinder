@@ -1,4 +1,4 @@
-jQuery.ajaxSettings.traditional = true
+jQuery.ajaxSettings.traditional = true;
     $('#findFriend').on("click", function(event){
 
         //We get the friends api
@@ -62,3 +62,5 @@ jQuery.ajaxSettings.traditional = true
                 console.log("New Friend Added :)");
             });
         });
+
+        
