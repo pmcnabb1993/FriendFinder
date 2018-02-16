@@ -48,6 +48,7 @@ jQuery.ajaxSettings.traditional = true;
                 location.reload();
             });
         });
+        jQuery.ajaxSettings.traditional = true;
             //adding a new friend into the array
             var newFriend = {
                 name: $("#name").val().trim(),
@@ -56,7 +57,7 @@ jQuery.ajaxSettings.traditional = true;
 
             };
             console.log(newFriend);
-    
+    jQuery.ajaxSettings.traditional = true;
             //posting our new friend to the api
             $.post("/api/friends", newFriend, function(data){
                 console.log("New Friend Added :)");
