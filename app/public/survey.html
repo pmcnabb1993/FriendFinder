@@ -23,7 +23,7 @@
   <title>Friend Finder</title>
 </head>
 <style>
-    .img {
+    #friendImg {
         height: 350px;
         margin: 0 auto;
         display: block;
@@ -46,9 +46,9 @@
                     <br><br>
                     <div class="row">
                         <div class="col s3">
-                        <h1 class="header orange-text">Survey Time!</h1>
-                        <h5 class="light">We match friends based these 10 questions.</h5>
-                        <h5 class="light">Answer each question with how strongly you agree (5) or how strongly you disagree (1).</h5>
+                        <h1 class="header orange-text center offset-2">Survey Time!</h1>
+                        <h5 class="light center offset-2">We match friends based these 10 questions.</h5>
+                        <h5 class="light center offset-2">Answer each question with how strongly you agree (5) or how strongly you disagree (1).</h5>
                         </div>
                         </div>
                     </div>
@@ -190,12 +190,11 @@
                     <div>
                         <a class="btn-large waves-effect waves-light white-text orange" id="findFriend" data-toggle="modal" data-target="#myModal">Match With Your New Friend!</a>
                     </div>
+                    <br>
+                    <a href="/api/friends">API Friends List</a>
+                    <br>
                 </div>
-                <br>
             <div class="col s4"></div>
-            <p>
-                <a href="/api/friends">API Friends List</a>
-              </p>
             <!--End row-->
                 </div>
             </div>
@@ -210,7 +209,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Meet Your Best New Friend!</h4>
+                <h4 class="modal-title center">Meet Your Best New Friend!</h4>
                 </div>
                 <div class="modal-body">
                     <div id="friendName"></div>
