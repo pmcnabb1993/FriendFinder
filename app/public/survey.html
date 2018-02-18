@@ -24,10 +24,43 @@
 </head>
 <style>
     #friendImg {
-        height: 350px;
-        margin: 0 auto;
-        display: block;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border: 3px solid #c99;
+    background-position: center center;
+    background-size: cover;
     }
+    .modal-header {
+    padding: 2px 16px;
+    background-color: #daac69;
+    color: white;
+}
+
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #daac69;
+    color: white;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
   
 </style>
 
@@ -207,10 +240,9 @@
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
             
-            <div class="modal-content">
+            <div class="modal-content center">
                 <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title center">Meet Your Best New Friend!</h4>
+                <h4 class="modal-title">Meet Your Best New Friend!</h4>
                 </div>
                 <div class="modal-body">
                     <div id="friendName"></div>
